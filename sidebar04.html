@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/aa32e29432.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="dashboard2.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <div class="sidebar close">
+        <div class="logo-details">
+            <span class="icon-principal"><i class="fas fa-cube"></i></span>
+            <span class="logo-name"><h2>SISGEMSA</h2></span>
+        </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-home"></i></span>
+                        <span class="link-name">Dashboard</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a href="#" class="link-name">Dashboard </a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-user"></i></span>
+                        <span class="link-name">Customer</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a href="#" class="link-name">Customer</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="iocn-link">
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-toolbox"></i></i></span>
+                        <span class="link-name">Administración</span>
+                    </a>
+                    <span class="icon"><i class="fas fa-chevron-down arrow"></i></span>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a href="#" class="link-name">Administración </a></li>
+                        <li><a href="#">hola </a></li>
+                        <li><a href="#">hola </a></li>
+                        <li><a href="#">hola </a></li>
+                        <li><a href="#">hola </a></li>
+                        <li><a href="#">hola </a></li>
+                        <li><a href="#">hola </a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="iocn-link">
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-calculator"></i></span>
+                        <span class="link-name">Contabilidad</span>
+                    </a>
+                    <span class="icon"><i class="fas fa-chevron-down arrow"></i></span>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a href="#" class="link-name">Contabilidad </a></li>
+                        <li><a href="#">adios </a></li>
+                        <li><a href="#">adios </a></li>
+                        <li><a href="#">adios</a></li>
+                        <li><a href="#">adios</a></li>
+                        <li><a href="#">adios</a></li>
+                        <li><a href="#">adios</a></li>
+                    </ul>
+                    
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-question"></i></span>
+                        <span class="link-name">Help</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a href="#" class="link-name">Help </a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-key"></i></span>
+                        <span class="link-name">Password</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a href="#" class="link-name">Password </a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+                        <span class="link-name">Sign Out</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a href="#" class="link-name">Sign Out </a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <div class="profile-details">
+                        <div class="profile-content">
+                            <img src="user.jpg" alt="profile">
+                        </div>
+                        <div class="name-job">
+                            <div class="profile-name">Nicole Uru</div>
+                            <div class="job">Diseñadora Web</div>
+                        </div>
+                        <i class="fas fa-sign-out-alt"></i> 
+                    </div>
+                </li>
+            </ul>
+<!--      
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <div class="search">
+                        <label>
+                            <input type="text" placeholder="Buscar"> 
+                        </label>
+                        <div class="user">
+                            <img src="user.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  -->
+    </div>
+    <script>
+       let arrow = document.querySelectorAll(".arrow");
+       for(var i = 0; i < arrow.length; i++){
+           arrow[i].addEventListener("click", (e)=>{
+            let arrowParent = e.target.parentElement.parentElement;
+            console.log(arrowParent);
+            arrowParent.classList.toggle("showMenu");
+           })
+       }
+    </script>
+    
+</body>
+</html> 
